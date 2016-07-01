@@ -1,5 +1,6 @@
 import $ from 'Jquery';
 import _ from 'lodash';
+import {get_tracks} from "./function-dic.js";
 
 var client_id = "8762736d61261497aec348a0aff61e31" ;
 
@@ -11,36 +12,36 @@ var tracks;
 
 
  
- var get_tracks = function(x, m){ $.ajax({ 
-	url: `${baseurl}/tracks`,
-	method: "GET",
-	dateType:"json",
-	data: {
-	  client_id: client_id,
-	  q: x,
-	  limit:200,
-	  linked_partitioning:3
-	}
+ // var get_tracks = function(x){ $.ajax({ 
+	// url: `${baseurl}/tracks`,
+	// method: "GET",
+	// dateType:"json",
+	// data: {
+	//   client_id: client_id,
+	//   q: x,
+	//   limit:200,
+	//   linked_partitioning:3
+	// }
 
-  }).then(function(obj) {
+ //  }).then(function(obj) {
     
-  	tracks = obj.collection;
-  	console.log(tracks);
+ //  	tracks = obj.collection;
+ //  	console.log(tracks);
   	
-  	tracks.forEach(function(y) {
-    console.log(y.title);
+ //  	tracks.forEach(function(y) {
+ //    console.log(y.title);
 
-  	}); 
+ //  	}); 
   
 
 
 
 
 
-  });
+ //  });
 
 
- ;}
+ // ;}
 
 
 
