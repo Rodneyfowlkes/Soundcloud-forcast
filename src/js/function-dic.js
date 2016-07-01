@@ -48,7 +48,8 @@ var tracks;
     var artist = y.user.username;
     var artist_url = y.permalink_url;
     console.log(artwork);
-
+    console.log();
+    if (artwork == null) {artwork = 'images/Doge_Head_PNG.png'};
     var song_temp = `<div class="grid_point">
          
          <div class="img_div"> <img class="items_img" src="${artwork}"> 
@@ -64,7 +65,7 @@ var tracks;
 
 
 
-    $(".loaded_song_div").appendChild(song_temp);
+    $(".loaded_song_div").append(song_temp);
 
 
 

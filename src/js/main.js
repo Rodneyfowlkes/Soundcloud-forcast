@@ -2,7 +2,7 @@ import $ from 'Jquery';
 import _ from 'lodash';
 import {get_tracks} from "./function-dic.js";
 
-var client_id = "8762736d61261497aec348a0aff61e31" ;
+var client_id = "8762736d61261497aec348a0aff61e31";
 
 //var baseurl = "https://api.soundcloud.com/users/8482005?client_id=${client_id}";
 var baseurl = "https://api.soundcloud.com";
