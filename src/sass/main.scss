@@ -1,0 +1,66 @@
+
+* {
+
+	box-sizing: border-box;
+}
+
+.body_container {
+	
+
+}
+
+.sidebar_search_div {
+ background-color: #E6E6FA;
+ width: 27%;
+ height: 100vw;
+ display:inline-block;
+
+
+}
+
+
+.main_audio_div {
+   display: inline-block;
+   background-color: #98FB98;
+   height: 100vw;
+   width: 72.5%;
+
+   
+}
+
+.main_player_div{
+	width: 100%;
+	height:24%;
+	background-color: #FFDAB9;
+} 
+
+.loaded_song_div {
+	height: 76%;
+	width:100%;
+	background-color:#F08080;
+	overflow: auto;
+}
+
+.grid_point {
+	display: inline-block;
+
+	width: 100px;
+	height:200px;
+} 
+.img_div {
+height: 100px;
+width: 100px;
+
+}
+
+
+.items_img {
+	height: 100px;
+width: 100px;
+
+}
+.retry {
+	font-size:0%;
+}
+
+

@@ -1,6 +1,6 @@
 import $ from 'Jquery';
 import _ from 'lodash';
-import {get_tracks} from "./function-dic.js";
+import {get_tracks,  getAudio} from "./function-dic.js";
 
 var client_id = "8762736d61261497aec348a0aff61e31";
 
@@ -47,7 +47,9 @@ var tracks;
 
 
 
-get_tracks()
+get_tracks();
+
+getAudio();
 
 // $.ajax({
 // 	url: `baseurl/tracks`,
