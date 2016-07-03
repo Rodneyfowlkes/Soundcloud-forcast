@@ -80,7 +80,16 @@ event.preventDefault();
  var item_sound = x.currentTarget.firstElementChild.innerText;
  console.log(item_sound);
 	$("#current_song").attr('src', `${item_sound}`);
-	return false;
+var item_title = x.currentTarget.childNodes[3].innerText;
+console.log(item_title)
+var item_artist = x.currentTarget.childNodes[5].innerText;
+console.log(item_artist)	
+$(".current_song_title").html(`${item_title}`);
+$(".current_song_artist").html(`${item_artist}`);
+
+
+
+
 } );
  });   ;}
 
