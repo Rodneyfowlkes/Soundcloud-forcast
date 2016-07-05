@@ -1,6 +1,6 @@
 import $ from 'Jquery';
 import _ from 'lodash';
-import {get_tracks,  getAudio} from "./function-dic.js";
+import {get_tracks,  getAudio, get_searched_tracks} from "./function-dic.js";
 
 var client_id = "8762736d61261497aec348a0aff61e31";
 
@@ -10,7 +10,13 @@ var baseurl = "https://api.soundcloud.com";
 var tracks;
 
 
-
+$(".search_button").on('click', function(x){
+	event.preventDefault();
+ var search_item = $(".searchbar_text_field").val();
+ console.log(search_item);
+ $(".search_results_div").html("");
+ get_searched_tracks(search_item);
+})
  
  // var get_tracks = function(x){ $.ajax({ 
 	// url: `${baseurl}/tracks`,
@@ -49,7 +55,7 @@ var tracks;
 
 get_tracks();
 
-getAudio();
+
 
 // $.ajax({
 // 	url: `baseurl/tracks`,

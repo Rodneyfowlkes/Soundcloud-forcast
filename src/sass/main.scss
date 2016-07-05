@@ -2,60 +2,115 @@
 * {
 
 	box-sizing: border-box;
+	
 }
 
 .body_container {
-	
+	// width: 100%;
 
+}
+
+
+.fixed_container{
+	width: 25%;
+	position: fixed;
+	
+ overflow:auto;
 }
 
 .sidebar_search_div {
  background-color: #E6E6FA;
- width: 27%;
- height: 100vw;
+ width: 100%;
+ height: 60vw;
  display:inline-block;
+ overflow:auto;
 
 
 }
+.searchform{
+
+}
+
+.searchbar_text_field{
+	 background-color: #2b303b;
+border: none;
+color:#A9A9A9;
+height: 30px;
+border-radius: 3px;
+margin-left: 15%;
+margin-top: 3%;
+margin-bottom: 3%;
+outline:none;
+}
+
+
+
 .search_bar_div{
 	position: absolute;
+background-color: black;	
+
+width: 100%;
 }
 .search_button {
 	height:30px;
-width:30px}
+width:30px;
+margin-left:-3%;
+margin-top:0px;
+ background: #584553;
+ border-style: none;
+ border-radius: 3px;
+ color:#68737B;
+}
 // d
 
 .main_audio_div {
    display: inline-block;
-   background-color: #98FB98;
-   height: 100vw;
-   width: 72.5%;
+   background-color: #163142;
+   height: 60vw;
+   width: 75%;
 
+margin-left: 25%;
    
 }
+
+.audio_player_holder{
+width: 35%;
+margin:auto;
+margin-top:10%;
+}
+
 
 .main_player_div{
 	width: 100%;
 	height:24%;
-	background-color: #FFDAB9;
+	background-color: #163142;
+    
+
 } 
 
+
 .loaded_song_div {
+
+display: inline-block;
+
 	height: 76%;
 	width:100%;
 	background-color:#F08080;
 	overflow: auto;
 }
 
-.grid_point {
+.grid_point {white-space:nowrap;
 	display: inline-block;
-
+    font-size: 10%;
 	width: 100px;
-	height:200px;
+	height:150px;
+	margin-left:5%;
+
 } 
 .img_div {
 height: 100px;
 width: 100px;
+
 
 }
 
@@ -64,9 +119,103 @@ width: 100px;
 	height: 100px;
 width: 100px;
 
+
 }
+.items_img:hover {
+box-shadow: 0 0 5px black;} 
+
+
+
+
 .retry {
 	font-size:0%;
 }
 
+.title_div{
+	margin-top:12%;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	a {text-decoration: none;}
+   
+}
 
+.song_artist_div {
+text-align: center;
+overflow: hidden;
+	text-overflow: ellipsis;
+a { text-decoration: none;}
+}
+
+
+
+
+
+.grid_point2 {
+	display: inline-block;
+    white-space:nowrap;
+	width: 70px;
+	height:140px;
+    margin-left: 3%; 
+        font-size: 10%;
+} 
+
+.items_img2:hover {
+box-shadow: 0 0 5px black;
+} 
+
+
+
+
+
+
+.img_div2 {
+height: 70px;
+width: 70px;
+
+}
+
+
+.items_img2 {
+	height: 70px;
+width: 70px;
+
+}
+.retry2 {
+	font-size:0%;
+}
+
+.search_results_div{
+// float: left;
+height: 100%;
+	   background-image: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
+box-shadow:inset 0 0 20px black;
+padding-top:60px;
+padding-left:26px;
+	 background-color: #E6E6FA;
+     width:100%;
+	overflow: auto;
+}
+
+.search_results_container{
+ position: absolute; 
+ top: 40px;
+ width:100%;
+	overflow:auto;
+	height:60vw;
+
+	// max-width: 316px;
+}
+
+.current_song_title{
+	color: #BFA04D;
+	font-family: 'Amatic SC', cursive;
+	font-size: 170%;
+}
+
+.current_song_artist{
+	color: #BFA04D;
+	font-family: 'Amatic SC', cursive;
+	font-size: 110%;
+}
+.2body_div{}
